@@ -1,0 +1,27 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(int num) 
+{
+    int count = 0;
+    while(num != 1)
+    {
+        if(num%2 == 0)
+        {
+            num >>= 1;
+        }
+        else if(num%2 ==1)
+        {
+            num = num * 3 + 1;
+        }
+        ++count;
+        
+        if(500 <= count)
+        {
+            return -1;
+        }
+    }
+    return count;
+}

@@ -4,10 +4,10 @@
 using namespace std;
 
 int solution(vector<int> citations) 
-{
+{   
     int answer = 0;
     int Count = 0;
-    for(int i =1; i <= 10000; i++)
+    for(int i = 0; i <= 10000; i++)
     {
         for(int j = 0; j < citations.size(); j++)
         {
